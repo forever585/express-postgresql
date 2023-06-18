@@ -8,7 +8,7 @@ const BcryptService = () => {
     }
 
     const comparePassword = (password, hash) => {
-        bcrypt.compare(password, hash)
+        return bcrypt.compare(password, hash)
     }
 
     return {

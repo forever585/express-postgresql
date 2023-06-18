@@ -16,7 +16,6 @@ const AuthController = () => {
                     order: [['id', 'DESC']]
                 })
                 const newId = parseInt(lastUser.dataValues.id) + 1
-                console.log(newId)
                 const user = await User.create({
                     id: newId,
                     username,
